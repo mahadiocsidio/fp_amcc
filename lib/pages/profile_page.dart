@@ -1,4 +1,4 @@
-import 'package:amibike/pages/home_page.dart';
+import 'package:amibike/pages/home_pages.dart';
 import 'package:amibike/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -9,24 +9,40 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: backgroundColor2,
+        backgroundColor: backgroundColor1,
         body: Padding(
-          padding: EdgeInsets.all(30),
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'Profile',
-                style: blackTextStyle.copyWith(
-                  fontSize: 40,
-                  fontWeight: semiBold,
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Icon(
+                      Icons.arrow_back_ios_new,
+                      color: backgroundColor2.withOpacity(0.5),
+                    ),
+                  ),
+                  SizedBox(width: 20),
+                  Text(
+                    'Profile',
+                    style: whiteTextStyle.copyWith(
+                      fontSize: 30,
+                      fontWeight: semiBold,
+                    ),
+                  ),
+                ],
               ),
               SizedBox(
-                height: 35,
+                height: 30,
               ),
               Row(
                 children: [
+                  SizedBox(width: 30),
                   Image.asset('assets/profileUser.png', width: 120),
                   SizedBox(
                     width: 13,
@@ -36,28 +52,29 @@ class ProfilePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Nama Lengkap Kamu Pada Aplikasi Amibike Ini ',
+                          'Sugeng Berkah ',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: blackTextStyle.copyWith(
+                          style: whiteTextStyle.copyWith(
                               fontSize: 20, fontWeight: semiBold),
                         ),
-                        Text('NIM',
-                            style: blackTextStyle.copyWith(fontSize: 14)),
+                        Text('081234575999',
+                            style: whiteTextStyle.copyWith(fontSize: 14)),
                       ],
                     ),
                   ),
                 ],
               ),
               SizedBox(
-                height: 40,
+                height: 30,
+                width: 30,
               ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomePage(),
+                      builder: (context) => HomePages(),
                     ),
                   );
                 },
@@ -67,7 +84,7 @@ class ProfilePage extends StatelessWidget {
                       fontSize: 17, fontWeight: semiBold),
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: backgroundColor1,
+                  primary: backgroundColor4,
                   minimumSize: Size(144, 44),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
@@ -122,20 +139,23 @@ class menuItem extends StatelessWidget {
           children: [
             Row(
               children: [
+                SizedBox(width: 30),
                 Icon(
                   icon,
+                  color: textColor4,
                 ),
                 SizedBox(
                   width: 15,
                 ),
                 Text(
                   text,
-                  style: grayTextStyle.copyWith(fontSize: 18),
+                  style: whiteTextStyle.copyWith(fontSize: 18),
                 ),
               ],
             ),
             Icon(
               Icons.chevron_right,
+              color: textColor4,
             ),
           ],
         ),

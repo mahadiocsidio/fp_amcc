@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "411017644513",
+    "project_id": "amcc-amibike-09876",
+    "storage_bucket": "amcc-amibike-09876.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411017644513:android:d70c816c41f4df1e14aaa0",
+        "android_client_info": {
+          "package_name": "com.example.amibike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411017644513-mtuvs1mos6l99paptg1g3cjo48gbdobi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2thLEQ1uGE3e3ou3gYwFvScZ4mvyxwCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411017644513-mtuvs1mos6l99paptg1g3cjo48gbdobi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
