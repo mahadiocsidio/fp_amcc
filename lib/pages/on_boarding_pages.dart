@@ -1,4 +1,3 @@
-import 'package:amibike/pages/home_pages.dart';
 import 'package:amibike/pages/sign_in_pages.dart';
 import 'package:amibike/theme.dart';
 import 'package:flutter/material.dart';

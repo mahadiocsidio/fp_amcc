@@ -35,7 +35,11 @@ class SignInPages extends StatelessWidget {
               ),
               SizedBox(height: 20),
               TextFormField(
+                style: TextStyle(
+                  color: textColor4
+                ),
                 decoration: InputDecoration(
+                  contentPadding: EdgeInsets.only(left: 30),
                   enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: backgroundColor2)),
                   labelText: 'Email',
@@ -46,11 +50,16 @@ class SignInPages extends StatelessWidget {
                   hintStyle: TextStyle(
                     color: textColor4,
                   ),
+                  counterStyle: TextStyle(
+                  ),
                   prefixIcon: Icon(Icons.email, color: backgroundColor2),
                 ),
               ),
               SizedBox(height: 16),
               TextField(
+                style: TextStyle(
+                  color: textColor4
+                ),
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: backgroundColor2)),
@@ -63,7 +72,7 @@ class SignInPages extends StatelessWidget {
                     color: textColor4,
                   ),
                   border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.lock, color: backgroundColor2),
+                  prefixIcon: Icon(Icons.lock, color: backgroundColor2,),
                   suffixIcon:
                       Icon(Icons.remove_red_eye, color: backgroundColor2),
                 ),
@@ -117,4 +126,6 @@ class SignInPages extends StatelessWidget {
       ),
     );
   }
+  
+  void setState(Set<bool> set) {}
 }
